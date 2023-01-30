@@ -1,7 +1,13 @@
 {
+  "name": "productoapi",
+  "version": "1.0.0",
+  "description": "MEAN",
+  "main": "index.js",
   "scripts": {
     "dev": "nodemon ."
   },
+  "author": "Gretel Barrios",
+  "license": "ISC",
   "devDependencies": {
     "nodemon": "^2.0.20"
   },

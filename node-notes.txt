@@ -40,3 +40,6 @@
     abrimos mongodb compass y donde nos indica la url copiaremos la url que nos da cuando pedimos conectarnos al cluster
     mongodb+srv://Avluela:<password>@cluster0.1c1ikox.mongodb.net/test debe ser algo asi
     sacamos el /test y remplazamos la contraseña por la que definimos durante la creacion del usuario para el cluster
+
+    --creamos un archivo variables.env
+     DB_MONGO= le pasamos la mima cadena de conexion que pasamos para conectar en mongo db compass /nombre de la bd

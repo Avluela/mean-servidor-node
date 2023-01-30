@@ -1,0 +1,43 @@
+---
+    npm init
+
+---instalando dependencias
+    npm install -D nodemon
+
+    ---
+        -D indica que va a ser una dependencia solo en desarrollo
+        nodemon va a crear un servidor de desarollo y 
+        cada vez que agamos un cambio en el back end 
+        automaticamente se va a refrescar
+
+    (podemos instalar varias librerias en un solo comando)
+    npm install express mongoose dotenv
+
+        express: que va a ser nuestro servidor
+        mongoose: es un ODM, que nos sirve para acceder facilmente a nuestra bd
+        dotenv: que es para manejar nuestros archivos de entorno
+
+
+--- Configurar nodemon
+    en la raiz crear un archivo index.js
+    en package.json agregamos un script 
+        "scripts": {
+            "dev": "nodemon ."
+        },
+
+        nodemon . hace referencia a nuestro index.js, si el index le llamaramos con otro nombre deberiamos de colocarle el nombre en cuestion
+        ej: nodemon elnombrequefuere
+
+---- levantar el servidor
+    npm run dev
+
+
+---MONGO DB
+    creamos un cluster desde la pagina oficial de mongo db, para ello debemos loguearnos
+    luego, elegimos conectarnos al cluster mediante mongodb compass
+    para ello debemos descargarnos e instalar mongodb compass 
+    https://www.mongodb.com/try/download/compass
+    abrimos mongodb compass y donde nos indica la url copiaremos la url que nos da cuando pedimos conectarnos al cluster
+    mongodb+srv://Avluela:<password>@cluster0.1c1ikox.mongodb.net/test debe ser algo asi
+    sacamos el /test y remplazamos la contraseña por la que definimos durante la creacion del usuario para el cluster
+    mongodb+srv://Avluela:micontrasena@cluster0.1c1ikox.mongodb.net

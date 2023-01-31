@@ -17,6 +17,7 @@
         mongoose: es un ODM, que nos sirve para acceder facilmente a nuestra bd
         dotenv: que es para manejar nuestros archivos de entorno
 
+    npm install cors
 
 --- Configurar nodemon
     en la raiz crear un archivo index.js
